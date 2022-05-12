@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>my flexbox page</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+    #box1 {
+      background: black;
+      display: flex;
+      flex-direction: row-reverse;
+  }
+  #box2 {
+    background: black;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#box3 {
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+#box4 {
+  background: black;
+  display: flex;
+  flex-direction: row;
+}
+  #box5 {
+    background: black;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 10;
+}
+#box6 {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+#box7 {
+  background: black;
+  display: flex;
+  flex-grow: 4;
+}
+    .red {
+      background: red;
+      height: 150px;
+      width: 150px;
+    }
+    .purple {
+      background: purple;
+      height: 150px;
+      width: 150px;
+
+    }
+    .blue {
+      background: blue;
+      height: 150px;
+      width: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box1">
+    <div class="red"></div>
+    <div class="purple"></div>
+    <div class="blue"></div>
+    <div id="box2">
+      <div class="red"></div>
+      <div class="purple"></div>
+      <div class="blue"></div>
+      <div id="box3">
+        <div class="red"></div>
+        <div class="purple"></div>
+        <div class="blue"></div>
+        <div id="box4">
+          <div class="red"></div>
+          <div class="purple"></div>
+          <div class="blue"></div>
+          <div id="box5">
+            <div class="red"></div>
+            <div class="purple"></div>
+            <div class="blue"></div>
+            <div id="box6">
+              <div class="red"></div>
+              <div class="purple"></div>
+              <div class="blue"></div>
+              <div id="box7">
+                <div class="red"></div>
+                <div class="purple"></div>
+                <div class="blue"></div>
+                v
+  </div>
+</body>
+
+</html>
