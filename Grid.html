@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Grid</title>
+
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2.7fr 1.3fr;
+    grid-template-rows: 40px 150px 3fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Header Header Header"
+      "Left-1 Title Right-1"
+      "Left-2 Center Right-2"
+      "Bottom Bottom Bottom";
+  }
+  .Title { grid-area: Title;
+  Background:red; }
+  .Header { grid-area: Header;
+  Background: pink;}
+  .Center { grid-area: Center;
+  Background: blue; }
+  .Left-1 { grid-area: Left-1;
+  Background: purple;}
+  .Right-1 { grid-area: Right-1;
+  Background: green; }
+  .Left-2 { grid-area: Left-2;
+  Background: orange; }
+  .Right-2 { grid-area: Right-2;
+     Background: black;}
+  .Bottom { grid-area: Bottom;
+   Background: lightblue;}
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="Title"></div>
+    <div class="Header"></div>
+    <div class="Center">
+    <h1>Hi</h1></div>
+    <div class="Left-1"></div>
+    <div class="Right-1"></div>
+    <div class="Left-2"></div>
+    <div class="Right-2"></div>
+    <div class="Bottom"></div>
+  </div>
+
+</body>
+
+
+
+</html>
