@@ -1,0 +1,119 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>animations</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      background-image: radial-gradient(circle 800px at 6.8% 8.3%, rgba(255, 244, 169, 1) 0%, rgba(255, 244, 234, 1) 100.2%);
+      min-height: 100vh;
+      background-attachment: fixed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    h1 {
+      color: blue;
+      font-size: 2rem;
+      text-shadow: 0px 0px transparent;
+      transition: color 1s, font-size .5s, text-shadow .5s;
+    }
+
+    div {
+      background: green;
+      height: 200px;
+      width: 200px;
+      margin: 2rem;
+      border-radius: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border: 15px solid black;
+    }
+
+    #box1 {
+      animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+    }
+    @keyframes example {
+      0%   {background-color: red;
+      border: 2px solid pink;}
+      25%  {background-color: yellow;
+      border: 5px solid blue;}
+      50%  {background-color: blue;
+      border: 10px solid purple;}
+      75% {background-color: green;
+      border: 15px solid black;}
+      100% {background-color: red;
+      border: 2px solid pink;}}
+
+    #box2 {animation-name: pulse;
+animation-duration: .5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;}
+
+@keyframes pulse {
+  0%{
+    transform: scale(1);
+    background-color: blue;
+    border: 15px solid black;
+  }
+  100%{
+    transform: scale(1.5);
+    background-color: red;
+    border: 3px solid purple;
+  }
+}
+
+#box3 {
+  animation-name: turn;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes turn {
+  0%{
+    transform: scale(1);
+    background-color: pink;
+    border: 9px solid black;
+  }
+  100%{
+    transform: scale(2);
+    background-color: grey;
+    border: 3px solid blue;
+     transform: rotateX(150deg)
+  </style>
+</head>
+
+<body>
+  <h1>amazing animations</h1>
+  <p>examples of simple animations</p>
+
+  <div id="box1">
+    <p>animate</p>
+  </div>
+  <div id="box2">
+    <p>animate</p>
+  </div>
+  <div id="box3">
+    <p>animate</p>
+  </div>
+</body>
+
+</html>
